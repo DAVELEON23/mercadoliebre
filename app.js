@@ -9,6 +9,6 @@ app.get ("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"/views/home.html"))
 });
 
-app.listen (4100,()=> {
-    console.log("servidor corriendo puerto 4100")
+app.listen (4000,()=> {
+    console.log("servidor corriendo http://localhost:4000/")
 });
