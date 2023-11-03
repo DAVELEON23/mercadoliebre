@@ -25,6 +25,7 @@ main section article{
     margin: 10px;
     
 }
+
 .compra-cuotas h3{
     text-align: center;
 }
@@ -36,13 +37,14 @@ main section article{
 .burger-menu{
 background-color: var(--color-celeste);
 color :white;
-width: 20px;
+width: 22px;
 text-align: center;
-font-size: 15px;
+font-size: 10px;
 margin: auto;
-padding: 5px;
-border-radius: 10%;
-
+padding: 6px;
+border-radius: 20%;
+height: 22px;
+margin-top: 5px;
 }
 
 .amarillo{
@@ -56,48 +58,70 @@ border-radius: 10%;
     
 
 }
-.nav-home {
+.secction-menu {
     display: none;
 }
 
-.bar1 li a{
+.nav-home1 li a{
     
     color: black;
 }
-.bar2 li a{
+.nav-home2 li a{
     
     color: black;
 }
+/* .logo-header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+} */
+
+.logomercado{
+    width: 50%;
+}
+.compra-cuotas{
+    width: 100%;
+}
+.buscar-div{
+    width: 50%;
+    margin-left: 0%;
+}
+
 
 .titulares {
     font-size: 24px;
     text-align: center;
-    color: var(--color-grisOscuro);
+    color: var(--color-grisOscuro); 
+}
 
-    
-}
-.fa-circle{
-    
-    font-size: 25px;
+.icono-carrito{
+    position:absolute;
     color: var(--color-verde);
-    
-}
-.fa-truck{
-    position:relative;
-    right:23px;
-    bottom: 4px;
-    color: var(--color-verde);
+    display: block;
+    font-size: 16px;
+    border: 2px solid var(--color-verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    left: 80%;
+    padding: 3px;
+    width: 27px;
+    height: 29px;
 }
 .descripcion-art{
     border-top: 1px solid #ebebeb;
-    padding: 15px;
+    padding: 2px;
+    position: relative;
+    bottom: 10px;
 }
 .precio{
     font-size: 18px;
+    flex-grow: 0.3;
 }
 .descripcion1{
     font-size: 16px;
     color: var(--color-verde);
+    flex-grow: 0.7;
 }
 .descripcion2{
     display: none;
@@ -108,22 +132,106 @@ border-radius: 10%;
 }
 .footer{
     text-align: center;
-    
+}
+.box-descripcion {
+    display:flex;
 }
 
-@media (min-width:361px) {
+@media (min-width:768px) {
+    .logo-header {
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+    }
     .section-articulo article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
     }
     .descripcion2 {
         display: initial;
         color: var(--color-grisOscuro);
     }
-    .nav-home{
-        display: initial;
+    .nav-home1 ul{
+        display: flex;
+        justify-content: space;
+        column-gap: 10px;
     }
+    .nav-home2 ul{
+        display: flex;
+        justify-content: space;
+        column-gap: 10px;
+    }
+    
     .burger-menu{
         display:none;
     }
+    .secction-menu {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logomercado{
+        width: 33%;
+    }
+    .compra-cuotas{
+        width: 33%;
+    }
+    .buscar-div{
+        width: 33%;
+        margin-left: 0%;
+    }
+    .section-articulo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .articulo1{
+    width: 47%;
+    
+    }
+    
+
+}
+
+@media (min-width: 1024px){
+    
+    .secction-menu{ 
+        display: flex;
+        flex-direction: row;
+    }
+    .logomercado{
+        width: 33%;
+    }
+    .compra-cuotas{
+        width: 33%;
+    }
+    .buscar-div{
+        width: 33%;
+        margin-left: 0%;
+    } 
+    .section-articulo{
+    display: flex;
+    flex-direction: row;
+    }
+    .logo-header {
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .section-articulo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .articulo1{
+        width: 22%;
+        margin-inline: auto;
+    }    
 }
 
