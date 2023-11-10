@@ -1,0 +1,31 @@
+
+.h1-login{
+    text-align: center;
+    margin: 0;
+}
+
+.campos-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap:10px;
+    padding:10px;
+    justify-content: center;
+}
+.barra{
+    width: 50%;
+    padding:1%;
+    border-radius: 5px;
+    border-color: var(--color-grisClaro);
+}
+
+.boton-enviar-login{
+    width: 50%;
+    background-color: var(--color-celeste);
+    border-radius: 5px;
+    padding: 1%;
+    color: var(--color-grisClaro);
+    font-weight: 500;
+    border-color: var(--color-grisClaro);
+}
